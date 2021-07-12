@@ -20,7 +20,7 @@ class APIFeatures {
       const sortBy = this.queryStr.sort.split(',').join(' ');
       this.query = this.query.sort(sortBy);
     } else {
-      this.query = this.query.sort(-createdAT);
+      this.query = this.query.sort('-createdAT');
     }
 
     return this;    // Return this object in order allow methods chaining on the instance
